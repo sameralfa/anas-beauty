@@ -24,8 +24,8 @@ img { display: block; width: 100%; }
 .brand span { margin-top: 7px; font-family: 'DM Sans', Arial, sans-serif; font-size: 8px; font-weight: 700; letter-spacing: .2em; }
 .site-header nav { display: flex; gap: 38px; color: #665748; font-size: 12px; }
 .site-header nav a:hover, .text-link:hover { color: var(--gold); }
-.header-button { padding: 13px 18px; border: 1px solid #b5976a; font-size: 11px; font-weight: 600; white-space: nowrap; }
-.header-button span { margin-left: 18px; }
+.header-button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 12px 24px; border: 1px solid #a7834f; border-radius: 3px; color: #70502a; font-size: 12px; font-weight: 600; white-space: nowrap; transition: background-color .2s, color .2s; }
+.header-button:hover { background: #84602f; color: white; }
 .hero { display: grid; grid-template-columns: .7fr 1.3fr; align-items: center; gap: 6%; padding: 48px 7% 65px; }
 .hero-copy { max-width: 410px; padding: 30px 0; }
 .eyebrow { color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .16em; line-height: 1.5; }
@@ -33,7 +33,7 @@ h1 { margin-top: 20px; font-size: clamp(36px, 3.7vw, 55px); line-height: 1.12; l
 h1 em, h2 em { color: var(--gold); }
 .hero-copy > p:not(.eyebrow), .section-intro > p:not(.eyebrow), .booking-copy > p:not(.eyebrow) { margin-top: 20px; color: var(--muted); font-size: 14px; line-height: 1.8; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 25px; margin-top: 30px; }
-.button { display: inline-flex; align-items: center; justify-content: space-between; gap: 35px; background: #84602f; color: white; padding: 16px 20px; font-size: 12px; font-weight: 600; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 14px 28px; border-radius: 3px; background: #84602f; color: white; font-size: 12px; font-weight: 600; transition: background-color .2s; }
 .button:hover { background: #68491f; }
 .text-link { display: inline-flex; gap: 20px; padding: 8px 0; border-bottom: 1px solid #c5b290; font-size: 12px; font-weight: 600; }
 .hero-image { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
@@ -71,8 +71,7 @@ footer > span { color: #d2c2aa; font-size: 9px; letter-spacing: .1em; }
   .brand { font-size: 21px; }
   .brand span { font-size: 7px; }
   .site-header nav { display: none; }
-  .header-button { padding: 11px 13px; }
-  .header-button span { margin-left: 8px; }
+  .header-button { padding: 11px 18px; }
   .hero { display: flex; flex-direction: column-reverse; gap: 10px; padding: 20px 5% 45px; }
   .hero-image { width: 100%; gap: 8px; }
   .hero-copy { align-self: stretch; padding: 25px 0 0; }
