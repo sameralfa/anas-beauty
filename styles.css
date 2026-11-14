@@ -37,7 +37,7 @@ h1 em, h2 em { color: var(--gold); }
 .button:hover { background: #68491f; }
 .text-link { display: inline-flex; gap: 20px; padding: 8px 0; border-bottom: 1px solid #c5b290; font-size: 12px; font-weight: 600; }
 .hero-image { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-.hero-image img { aspect-ratio: 1 / 1; height: auto; object-fit: contain; background: #ede3d5; }
+.hero-image img { aspect-ratio: 1 / 1; height: auto; object-fit: contain; mask-image: radial-gradient(ellipse 75% 75% at center, #000 65%, transparent 100%); }
 .section { padding: 100px 11%; }
 .services { background: var(--paper); }
 .section-intro { max-width: 520px; }
