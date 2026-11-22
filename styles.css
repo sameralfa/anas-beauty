@@ -38,7 +38,7 @@ h1 em, h2 em { color: var(--gold); }
 .hero-image { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .hero-image img { aspect-ratio: 1 / 1; height: auto; object-fit: contain; mask-image: radial-gradient(ellipse 75% 75% at center, #000 65%, transparent 100%); }
 .hero-image-soft img { width: 100%; max-width: 520px; aspect-ratio: 1 / 1; justify-self: center; object-fit: cover; object-position: center top; opacity: .95; mask-image: radial-gradient(ellipse 50% 50% at center, #000 45%, transparent 100%); }
-.hero-image-soft .hero-image-portrait { transform: translateY(10%) scale(1.2); mask-image: radial-gradient(ellipse 40% 40% at 60% 40%, #000 35%, transparent 100%); }
+.hero-image-soft img:first-child { transform: translateY(10%) scale(1.2); mask-image: radial-gradient(ellipse 40% 40% at 60% 40%, #000 35%, transparent 100%); }
 .section { padding: 100px 11%; }
 .services { background: var(--paper); }
 .section-intro { max-width: 520px; }
