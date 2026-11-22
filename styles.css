@@ -19,9 +19,8 @@ a { color: inherit; text-decoration: none; }
 a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
 img { display: block; width: 100%; }
 .site-header { min-height: 92px; padding: 18px 7%; display: flex; align-items: center; justify-content: space-between; gap: 30px; background: var(--paper); }
-.brand { display: inline-flex; flex-direction: column; align-items: center; font-family: 'DM Serif Display', Georgia, serif; font-size: 25px; line-height: 1; letter-spacing: -.04em; white-space: nowrap; }
-.brand em { color: var(--gold); }
-.brand span { margin-top: 7px; font-family: 'DM Sans', Arial, sans-serif; font-size: 8px; font-weight: 700; letter-spacing: .2em; }
+.brand { display: inline-flex; flex: 0 0 auto; width: 200px; }
+.brand img { height: auto; }
 .site-header nav { display: flex; gap: 38px; color: #665748; font-size: 12px; }
 .site-header nav a:hover, .text-link:hover { color: var(--gold); }
 .header-button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 12px 24px; border: 1px solid #a7834f; border-radius: 3px; color: #70502a; font-size: 12px; font-weight: 600; white-space: nowrap; transition: background-color .2s, color .2s; }
@@ -62,7 +61,7 @@ h2 { margin-top: 14px; font-size: clamp(32px, 3.1vw, 43px); letter-spacing: -.03
 .team-member h2 { margin: 0; font-size: 28px; }
 .team-member p { margin-top: 14px; color: var(--muted); font-size: 13px; line-height: 1.8; }
 footer { display: flex; align-items: center; justify-content: space-between; gap: 25px; padding: 40px 7%; background: #493728; color: #f8f3eb; }
-.footer-brand em { color: #e0c394; }
+.footer-brand img { filter: brightness(0) invert(1); }
 footer p { color: #e0d2bd; font-size: 12px; }
 .footer-link { color: #e0d2bd; font-size: 12px; }
 .footer-link:hover { color: white; }
@@ -77,8 +76,7 @@ footer > span { color: #d2c2aa; font-size: 9px; letter-spacing: .1em; }
 }
 @media (max-width: 600px) {
   .site-header { min-height: 76px; gap: 12px; }
-  .brand { font-size: 21px; }
-  .brand span { font-size: 7px; }
+  .brand { width: 155px; }
   .site-header nav { display: none; }
   .header-button { padding: 11px 18px; }
   .hero { display: flex; flex-direction: column-reverse; gap: 10px; padding: 20px 5% 45px; }
